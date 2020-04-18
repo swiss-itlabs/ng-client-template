@@ -1,0 +1,17 @@
+{
+  "name": "#package-name#",
+  "version": "#version#",
+  "description": "Angular clients for the #api-name# API.",
+  "keywords": [
+    "api",
+    "client",
+    "angular",
+    "itlabs",
+    "#api-name#"
+  ],
+  "peerDependencies": {
+    "@angular/common": "^9.0.0",
+    "@angular/core": "^9.0.0",
+    "tslib": "^1.10.0"
+  }
+}

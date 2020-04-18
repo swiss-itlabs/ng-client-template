@@ -1,0 +1,47 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "service": {
+      "projectType": "library",
+      "root": "projects/service",
+      "sourceRoot": "projects/service/src",
+      "prefix": "itl",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/service/tsconfig.lib.json",
+            "project": "projects/service/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/service/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/service/src/test.ts",
+            "tsConfig": "projects/service/tsconfig.spec.json",
+            "karmaConfig": "projects/service/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/service/tsconfig.lib.json",
+              "projects/service/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    }},
+  "defaultProject": "service"
+}
