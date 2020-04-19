@@ -15,12 +15,6 @@
       "es2018",
       "dom"
     ],
-    "paths": {
-      "service": [
-        "dist/service/service",
-        "dist/service"
-      ]
-    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,

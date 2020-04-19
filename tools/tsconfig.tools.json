@@ -1,0 +1,28 @@
+{
+  "extends": "../tsconfig.json",
+  "compileOnSave": true,
+  "compilerOptions": {
+    "outDir": "./out-tsc",
+    "rootDir": ".",
+    "sourceMap": false,
+    "target": "ES6",
+    "module": "CommonJS",
+    "types": [
+      "node"
+    ],
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "forceConsistentCasingInFileNames": true,
+    "strictNullChecks": false
+  },
+  "include": [
+    "**/*.ts"
+  ]
+}
