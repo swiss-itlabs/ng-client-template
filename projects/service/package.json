@@ -1,6 +1,6 @@
 {
   "name": "#package-name#",
-  "version": "#version#",
+  "version": "#package-version#",
   "description": "Angular clients for the #api-name# API.",
   "keywords": [
     "api",
