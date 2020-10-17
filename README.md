@@ -11,11 +11,11 @@ Template to build an angular library with [nswag](https://github.com/RicoSuter/N
 
 ### init-script options
 
-| Name              | Description                                             |
-| ----------------- | ------------------------------------------------------- |
-| --dir             | Directory with the generated services.                  |
-| --package-name    | Name of the generated library (npm package name).       |
-| --package-version | Version of the generated library (npm package version). |
-| --api-name        | Name of the API for which the client was generated for. |
+| Name              | Description                                              |
+| ----------------- | -------------------------------------------------------- |
+| --dir             | Directory containing the generated services.             |
+| --package-name    | Name for the generated library (npm package name).       |
+| --package-version | Version for the generated library (npm package version). |
+| --api-name        | Name of the API for which the client was generated for.  |
 
 Run `npm run init -- -h` for further details.
